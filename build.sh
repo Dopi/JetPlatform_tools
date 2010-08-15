@@ -1,9 +1,9 @@
 #/bin/sh
 #check if the source directory exists
 if [ -d source ]; then
-echo "Copying files from delta directory ..."
-cp -rf delta/* source/
-echo "Applying patches ..."
+#echo "Copying files from delta directory ..."
+#cp -rf delta/* source/
+#echo "Applying patches ..."
 # apply patches from patch directory
 echo "Starting build ..."
 cd source
