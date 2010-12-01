@@ -49,6 +49,12 @@ git pull origin eclair
 git push github --all
 cd ../../../
 
+cd source/vendor/sec
+git remote rm github
+git remote add github git@github.com:Dopi/JetPlatform_vendor_sec.git
+git push github --all
+cd ../../../
+
 cd source/hardware/libhardware_legacy
 git remote rm origin
 git remote add origin git://android.git.kernel.org/platform/hardware/libhardware_legacy.git
