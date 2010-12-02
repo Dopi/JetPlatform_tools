@@ -1,20 +1,20 @@
 #/bin/bash
 #check if we are in the right working directory
-if [ -f make_buildpack.sh ]; then 
+if [ -f update_mirrors.sh ]; then 
 cd ..
 fi 
 
-cd source/packages/apps/ADWLauncher/
-git remote rm origin
-git remote add origin git://github.com/AnderWeb/android_packages_apps_Launcher.git
-git remote rm github
-git remote add github git@github.com:Dopi/JetPlatform_packages_apps_launcher.git
-git fetch origin
-git branch eclair
-git checkout origin/eclair
-git pull origin eclair
-git push github --all
-cd ../../../../
+#cd source/packages/apps/ADWLauncher/
+#git remote rm origin
+#git remote add origin git://github.com/AnderWeb/android_packages_apps_Launcher.git
+#git remote rm github
+#git remote add github git@github.com:Dopi/JetPlatform_packages_apps_launcher.git
+#git fetch origin
+#git branch eclair
+#git checkout origin/eclair
+#git pull origin eclair
+#git push github --all
+#cd ../../../../
 
 cd source/packages/apps/Openmanager/
 git remote rm origin
@@ -59,7 +59,7 @@ cd source/hardware/libhardware_legacy
 git remote rm origin
 git remote add origin git://android.git.kernel.org/platform/hardware/libhardware_legacy.git
 git remote rm github
-git remote add github git@github.com:Dopi/JetPlatform_hardware_libhardware_legacy.git
+git remote add github git@github.com:JetDroid/JetPlatform_hardware_libhardware_legacy.git
 git fetch origin
 git checkout eclair
 git pull origin eclair
